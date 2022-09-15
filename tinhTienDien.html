@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Tính tiền điện</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>kWh</td>
+            <td ><input type="number" id="kwh" style="border: 1px solid black; height: 30px; width: 300px"></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td id="amount" style="border: 1px solid black; height: 30px; width: 300px"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="tinhTien()">Tính tiền điện</button>
+                <button onclick="clearValue()">Reset</button>
+            </td>
+        </tr>
+    </table>
+    <script src="jsTinhTienDien.js"></script>
+</body>
+</html>
