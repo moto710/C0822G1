@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm số đảo ngược</title>
+</head>
+<body>
+    <h2>Tìm số đảo ngược</h2>
+    <table>
+        <tr>
+            <td><label for="number">Nhập số n:</label></td>
+            <td><input type="number" id="number"></td>
+        </tr>
+        <tr>
+            <td><button onclick="daoNguoc()">Kết quả</button></td>
+            <td id="sum"></td>
+        </tr>
+    </table>
+    <script>
+        function daoNguoc() {
+            let input=Number(document.getElementById("number").value),
+                result=0;
+            
+            }
+            document.getElementById("sum").innerHTML=result;
+        }
+    </script>
+</body>
+</html>

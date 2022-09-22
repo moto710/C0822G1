@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lũy thừa</title>
+</head>
+<body>
+    <h2>Tính lũy thừa x^n</h2>
+    <table>
+        <tr>
+            <td><label for="number">Nhập số x:</label></td>
+            <td><input type="number" id="numberX"></td>
+        </tr>
+        <tr>
+            <td><label for="number">Nhập số n:</label></td>
+            <td><input type="number" id="numberN"></td>
+        </tr>
+        <tr>
+            <td><button onclick="tinhLuyThua()">Kết quả</button></td>
+            <td id="result"></td>
+        </tr>
+    </table>
+    <script>
+        function tinhLuyThua() {
+            let soX=Number(document.getElementById("numberX").value),
+                soN=Number(document.getElementById("numberN").value),
+                result=1;
+            if (n=0) {
+                result=1;
+            } else 
+            for(i=1;i<=soN;i++) {
+                result*=soX;
+            }
+            document.getElementById("result").innerHTML=result;
+        }
+    </script>
+</body>
+</html>
